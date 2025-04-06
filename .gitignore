@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+.npm
+.pnpm
+.yarn-integrity
+
+# Build files
+dist/
+*.log
+logs/
+*.pid
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# IDE and Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Debug
+debug.log
+*.log
+
+# Coverage
+coverage/
+.nyc_output
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Testing
+junit.xml
+
+# Docker
+docker-compose.override.yml
+
+# Kubernetes
+k8s/secrets/
+*.kubeconfig
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional
+tmp/
+temp/

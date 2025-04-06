@@ -1,0 +1,12 @@
+# .github/workflows/deploy.yml
+name: Deploy to Kubernetes
+
+on: [push]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: docker build -t your-registry/user-activity-service .
+      - run: kubectl apply -f k8s/
